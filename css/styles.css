@@ -1,0 +1,38 @@
+body {
+   text-align: center;
+   font-size:larger;
+   font-family: myFirstFont;
+   src: url(sansation_light.woff)
+}
+
+b {
+   font-family: myFirstFont;
+   src: url(sansation_bold.woff);
+   font-weight: bold;
+}
+
+#txt1 {
+    margin: 10px;
+}
+
+#qrcode {
+    width: 100px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+#cefet {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+#logo {
+    width: 431px;
+    height: 75px;
+    position: relative;
+}
+
+.btn {
+    margin-top: 5px;
+}
