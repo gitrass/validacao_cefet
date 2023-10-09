@@ -9,28 +9,22 @@ var qrcode = new QRCode(document.getElementById("qrcode"), {
   downloadButton.addEventListener("click", function() {
 	const canvas = document.getElementById("qrcode").querySelector("canvas");
 
-	// Cria um novo canvas com uma borda branca de 20x20 pixels
 	const newCanvas = document.createElement("canvas");
 	newCanvas.width = canvas.width + 40;
 	newCanvas.height = canvas.height + 40;
 	const newContext = newCanvas.getContext("2d");
   
-	// Preenche o novo canvas com a cor branca
 	newContext.fillStyle = "white";
 	newContext.fillRect(0, 0, newCanvas.width, newCanvas.height);
   
-	// Desenha o QR Code no novo canvas
 	newContext.drawImage(canvas, 20, 20);
   
-	// Converte o novo canvas para uma imagem PNG
 	const image = newCanvas.toDataURL("image/png");
   
-	// Cria um novo elemento `a` para baixar a imagem
 	const downloadLink = document.createElement("a");
 	downloadLink.href = image;
 	downloadLink.download = "qr-code.png";
   
-	// Clica no elemento `a` para baixar a imagem
 	downloadLink.click();
   });
 
