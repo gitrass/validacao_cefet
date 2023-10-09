@@ -16,12 +16,15 @@ b {
 }
 
 #qrcode {
-    width: 100px;
+    width: 150px;
+    height: 110px;
     margin: auto;
     padding-top: 10px;
+    padding-left: 45px;
 }
 
 #cefet {
+    margin: auto;
     width: 100px;
     height: 100px;
     position: relative;
@@ -35,4 +38,12 @@ b {
 
 .btn {
     margin-top: 5px;
+}
+
+#downloadButton {
+    margin: auto;
+}
+
+.img{
+    margin:auto
 }
