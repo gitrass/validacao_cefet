@@ -42,7 +42,7 @@ function makeCode () {
 		//return;
 	}
 	var auxiliar = elText.value
-	if(elText.value && auxiliar.length == 11 && isNumeric(auxiliar)){
+	if(elText.value && auxiliar.length >= 11 && isNumeric(auxiliar)){
 		qrcode.makeCode(elText.value);
 		downloadButton.style.display = "block";
 	}
